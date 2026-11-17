@@ -103,14 +103,22 @@ This is the most important section to customize. It appears right after `\makecv
 
 Write 5-7 lines that function as an "elevator pitch": a concise, compelling introduction explaining why you're qualified for *this specific role*. Focus on what the employer gains from hiring you.
 
-**Create 2-3 profile statement templates for your main role types:**
+**Profile statement templates for Joaquín's main role types** *(distilled from his existing tailored CVs — adapt per posting):*
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Plant / Operations Engineering roles:**
+> Ingeniero Electromecánico recibido en UTN San Rafael (2025), con trayectoria de rápido crecimiento: ascendido de Ingeniero Jr a Ingeniero de Planta en menos de 2 años en Tassaroli S.A., proveedora de equipamiento para Halliburton, Titan y Petrobras. Combino formación técnica sólida en diseño, cálculo y automatización con gestión de operaciones, mantenimiento crítico y un proyecto de ingeniería eléctrica de media tensión. [Tailor closing to the role/company.]
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Maintenance / Reliability roles:**
+> Ingeniero Electromecánico (UTN San Rafael, 2025) con experiencia en mantenimiento de equipos críticos, planificación de órdenes de trabajo, mejora continua (5S) y resolución de fallas, incluyendo mantenimiento y programación de PLC. Analítico, proactivo y orientado a resultados, con disponibilidad full time y para reubicación.
+
+**For Oficina Técnica / Design / Product Engineering roles:**
+> Ingeniero Electromecánico (UTN San Rafael, 2025) con experiencia en diseño mecánico, documentación técnica e interpretación de planos bajo normas ASME y API. Manejo avanzado de SolidWorks, Inventor y AutoCAD (2D/3D), gestión de información técnica y coordinación entre ingeniería, producción y compras.
+
+**For Technical-Commercial / Sales / Consulting roles (activate Andino Ingeniería):**
+> Ingeniero Electromecánico (UTN San Rafael, 2025) que combina base técnica sólida con perfil comercial. Fundador de Andino Ingeniería, donde desarrollo relaciones consultivas, elaboro propuestas y cierro ventas de servicios de ingeniería. Experiencia directa en distribución de media/baja tensión, control industrial y automatización.
+
+**For Motorsport / Vehicle Dynamics roles (English, honest-transition framing):**
+> Electromechanical Engineer working in industrial and oil & gas engineering, transitioning into motorsport. Provable design skills — mechanical, hydraulic and electrical design, structural calculation, manufacturing documentation — that map directly onto race-car design and simulation support. Genuine, long-standing interest in vehicle dynamics, and actively pursuing a UK Motorsport Engineering postgrad to formalise the move. Not asking to skip the line — offering a strong engineering base and real motivation. *(Do NOT claim sim-racing setups as professional achievements.)*
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

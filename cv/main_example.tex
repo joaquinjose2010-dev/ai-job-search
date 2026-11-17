@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Joaquín Buttini
 %% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Use as the master reference when tailoring role-specific CVs (cv/main_<company>.tex).
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -10,9 +9,7 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
+% Force first/last name AND section headings to render in moderncv blue (color1).
 \renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
 \renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
@@ -24,18 +21,19 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Joaquín Buttini - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
+\usepackage{needspace}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Ing. Joaquín}{Buttini}
+\address{San Rafael, Mendoza, Argentina}{}{}
+\phone[mobile]{+54 260 458-5774}
+\email{joaquin.jose2010@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/joaquinbuttini}{LinkedIn}}
 
 \begin{document}
 
@@ -46,7 +44,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Ingeniero Electromecánico (UTN San Rafael, recibido 2025) con trayectoria de rápido crecimiento en la industria oil \& gas: ascendido de Pasante a Ingeniero de Planta en menos de 2 años en Tassaroli S.A., proveedora de equipamiento para Halliburton, Titan y Petrobras. Combino diseño y cálculo mecánico, hidráulico y eléctrico con gestión de operaciones, mantenimiento crítico y un proyecto de migración a media tensión con microgrid. Disponibilidad total de reubicación. En transición hacia la ingeniería de motorsport.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -55,17 +53,12 @@
 \section{Core Competencies}
 \vspace{1pt}
 \begin{itemize}
-
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
-
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
+\item \textbf{Diseño y cálculo}: mecánico, hidráulico y eléctrico; SolidWorks, Autodesk Inventor, AutoCAD, MATLAB; FEA básico.
+\item \textbf{Normas y documentación}: ASME, API, ISO 9001, IEC; planos, memorias de cálculo y especificaciones.
+\item \textbf{Energía eléctrica}: distribución media y baja tensión; microgrid (solar, BESS, generación a gas).
+\item \textbf{Mantenimiento y mejora continua}: preventivo/correctivo, planificación de OT, automatización y PLC, 5S.
+\item \textbf{Gestión y liderazgo}: operaciones de planta, coordinación multidisciplinaria, compras técnicas, liderazgo de equipos.
+\item \textbf{Vehicle dynamics (autodidacta)}: setup de suspensión, brake bias, transferencia de peso (sim racing).
 \end{itemize}
 
 % ============================================================
@@ -76,34 +69,72 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Mayo 2026--Actualidad}{Ingeniero de Planta}{Tassaroli S.A.}{San Rafael, Argentina}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Gestión integral de las operaciones de planta de un fabricante de equipos para la industria petrolera.
+    \item Liderazgo de los equipos de mantenimiento y producción en proyectos para Halliburton, Titan y Petrobras.
+    \item Seguimiento, dentro de un equipo multidisciplinario, del proyecto de migración de la planta de 3 suministros en baja tensión a un único suministro en media tensión, con microgrid (solar, BESS, generación a gas) para bajar potencia contratada, planchar la curva de demanda e inyectar excedentes. Seguimiento de la ingeniería externa, gestión de permisos ante EDEMSA y reporte a la dirección. Etapa de prefactibilidad.
+    \item Rediseño de componentes críticos, reduciendo tiempos de parada no programada.
+    \item Documentación técnica bajo normas ASME y API.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Ene 2025--Abr 2026}{Ingeniero en Mantenimiento}{Tassaroli S.A.}{San Rafael, Argentina}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Planificación y seguimiento de órdenes de trabajo en equipos críticos de la industria petrolera.
+    \item Mantenimiento preventivo y correctivo; diseño de piezas y dispositivos para mejoras de proceso.
+    \item Mantenimiento y programación de PLC; implementación de metodología 5S.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{May 2024--Dic 2024}{Pasante de Ingeniería}{Tassaroli S.A.}{San Rafael, Argentina}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Diseño y cálculo mecánico, hidráulico y eléctrico en proyectos de planta.
+    \item Fabricación de componentes bajo normas ASME y API; gestión de compras técnicas.
 \end{itemize}}}
 
+\vspace{3pt}
+
+\needspace{4\baselineskip}
+\item{\cventry{Feb 2026--Actualidad}{Ayudante de Cátedra}{UTN Facultad Regional San Rafael}{Argentina}{}{\vspace{1pt}
+Soporte académico en Ingeniería Electromecánica; guía de trabajos prácticos y explicación de conceptos complejos.}}
+
+\vspace{3pt}
+
+\needspace{4\baselineskip}
+\item{\cventry{2025--Actualidad}{Fundador -- Desarrollo Técnico-Comercial}{Andino Ingeniería}{Argentina}{}{\vspace{1pt}
+Emprendimiento propio de servicios de ingeniería (diseño mecánico y eléctrico) y de software a medida desarrollado con Claude Code; ciclo comercial completo, con clientes recurrentes.}}
+
+\end{itemize}
+
+% ============================================================
+%     KEY PROJECTS
+% ============================================================
+
+\section{Key Projects}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{Maquinaria agrícola (freelance, 2025--Actualidad)}: diseño integral de 3 máquinas (cálculo estructural, modelado 3D, planos y especificaciones) en paralelo a actividad full time.
+\item \textbf{Turbinas de eje vertical (UTN, 2024--2025)}: restauración de túnel de viento y ensayo de turbinas Savonius, Darrieus y mixta con datos reales de viento de Malargüe.
+\item \textbf{Tesis -- trasplantadora de plantines (2024--2025)}: diseño mecánico completo y análisis económico (TIR 51\%, VAN \$7.4M, repago 45 meses).
+\item \textbf{Impresora 3D + emprendimiento}: diseño y construcción de una impresora 3D propia y emprendimiento de impresión autofinanciado.
+\end{itemize}
+
+% ============================================================
+%     MOTORSPORT & VEHICLE DYNAMICS
+% ============================================================
+
+\section{Motorsport \& Vehicle Dynamics}
+\vspace{1pt}
+\begin{itemize}
+\item Interés genuino y de larga data en el automovilismo y la dinámica vehicular; sigue el deporte de cerca y practica sim racing (Assetto Corsa, ACC) como hobby.
+\item Habilidades de ingeniería transferibles (diseño mecánico, hidráulico y eléctrico, cálculo estructural y documentación de fabricación) aplicables a diseño de vehículos de competición y soporte de simulación.
+\item Objetivo: posgrado en Motorsport Engineering en el Reino Unido (Motorsport Valley).
 \end{itemize}
 
 % ============================================================
@@ -114,46 +145,25 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\needspace{4\baselineskip}
+\item{\cventry{2019--2025}{Ingeniero Electromecánico}{UTN -- Facultad Regional San Rafael}{Argentina}{}{\vspace{1pt}
+Recibido julio 2025 (acto de colación abril 2026; título en trámite). Tesis: diseño de trasplantadora de plantines con análisis de factibilidad.}}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{}{Técnico Electromecánico}{ENET 4-117 ``Ejército de los Andes''}{Argentina}{}{\vspace{1pt}
+Proyecto final: máquina automatizada controlada por PLC, diseñada, construida y programada de forma íntegra.}}
 
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
+%     LANGUAGES & CERTIFICATIONS
 % ============================================================
 
-\section{Languages}
+\section{Languages \& Certifications}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item Español (nativo); Inglés avanzado (B2 certificado, Anglia 2018; examen C1 Oxford previsto nov 2026); Portugués (comprensión básica).
 \end{itemize}
 
 % ============================================================

@@ -1,76 +1,78 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Configured for Joaquín Buttini: Argentine engineering (income base) + motorsport/UK (active target). -->
+<!-- Joaquín is globally mobile ("the farther the better") — do NOT filter results by distance. -->
 
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+**Motorsport / international (Priority 1):**
+- **linkedin.com/jobs** - filter UK / Motorsport Valley / worldwide
+- **motorsportjobs.com**, **thersa? / racecar-engineering job boards**, **f1jobs / teams' career pages** (Mercedes, Red Bull, McLaren, Williams, Alpine, Aston Martin, Haas, and F2/F3 & junior-formula teams and suppliers)
+- UK postgrad programmes (context, not jobs): Cranfield, Oxford Brookes, University of Bolton
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+**Argentina engineering (Priority 2-4):**
+- **linkedin.com/jobs** - filter Argentina / region
+- **bumeran.com.ar**, **computrabajo.com.ar**, **zonajobs.com.ar**
+- Company career pages via Google `site:` (YPF, Tecpetrol, Pan American Energy, Vista, Techint, Schneider Electric, Mastellone, plus Neuquén/Vaca Muerta operators and service companies)
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+Grouped by priority. Combine with location terms where the site supports it, but remember location is **not** a filter for this profile.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+### Priority 1: Motorsport / Vehicle Dynamics (active target — push now)
 
 ```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "graduate design engineer" motorsport
+site:linkedin.com/jobs "junior mechanical design engineer" motorsport UK
+site:linkedin.com/jobs "vehicle dynamics engineer" (graduate OR junior)
+site:linkedin.com/jobs "simulation engineer" motorsport
+site:motorsportjobs.com design engineer
+site:motorsportjobs.com graduate
+"race team" "graduate engineer" OR "junior engineer" careers
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+### Priority 2: Oil & Gas / Energy Engineering (Argentina — income base)
 
 ```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "ingeniero de planta" Argentina
+site:linkedin.com/jobs "ingeniero de mantenimiento" (Neuquén OR "Vaca Muerta" OR Argentina)
+site:linkedin.com/jobs "ingeniero electromecánico" oil gas Argentina
+site:computrabajo.com.ar ingeniero mantenimiento petrolera
+site:bumeran.com.ar ingeniero electromecánico
+"ingeniero eléctrico" "media tensión" Neuquén OR "Río Negro"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+### Priority 3: Industrial / Process / Oficina Técnica (Argentina)
 
 ```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "ingeniero de procesos" Argentina
+site:linkedin.com/jobs "oficina técnica" ingeniero (SolidWorks OR Inventor) Argentina
+site:linkedin.com/jobs "ingeniero de proyectos" industrial Argentina
+site:computrabajo.com.ar ingeniero diseño mecánico
+site:bumeran.com.ar ingeniero de planta OR ingeniero de producción
 ```
 
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+### Priority 4: Adjacent / Technical-Commercial (wider net — activate Andino profile)
 
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "ingeniero comercial" OR "technical sales engineer" Argentina
+site:linkedin.com/jobs "ingeniero de confiabilidad" Argentina
+site:linkedin.com/jobs "field engineer" oil gas Argentina
+site:linkedin.com/jobs "graduate engineer" (rotational OR international)
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+**Global mobility — no distance filter.** Joaquín will relocate anywhere. Instead of excluding by distance, *prioritize* by strategic value:
+- **Ideal:** UK motorsport hubs (Motorsport Valley), any race-team/supplier role anywhere; international oil & gas rotations; English-speaking or relocation-heavy roles that build toward the motorsport move.
+- **Strong:** Neuquén / Vaca Muerta and other Argentine oil & gas hubs; large industrial employers anywhere in Argentina.
+- **Fine:** San Rafael / Cuyo and remote/hybrid.
+- Flag visa/work-permit requirements for international roles as practical notes, never as reasons to exclude.
 
 ## Date Filter
 
-Only include jobs posted within the last 14 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
+Only include jobs posted within the last 14 days, or with a deadline not yet passed. If a date can't be determined, include it flagged "date unknown".
 
 ## Adapting Queries
 
-If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+If the user runs `/scrape motorsport`, run all Priority 1 queries plus 2-3 custom ones for the named focus. `/scrape neuquen` → Priority 2 with Neuquén/Vaca Muerta terms. `/scrape broad` → all categories.

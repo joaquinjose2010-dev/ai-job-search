@@ -104,3 +104,12 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Default to the language of the job posting
 - Cover letters in the posting's language should feel natural, not translated
 - Slightly warmer, more personal tone may be acceptable in some languages
+- **Joaquín's applications are usually Spanish (Argentina) or English (motorsport/international).** Argentine Spanish, professional register.
+
+## Patterns Observed in Past Applications
+*(Extracted from Joaquín's existing cover letters — descriptive, not prescriptive.)*
+- **Spanish letters** open with a `Ref: Postulación — [rol]` line, then `Estimados/as,` or `Estimado equipo de [empresa],`, then state the role applied for + current position (Ing. de Planta en Tassaroli, clients Halliburton/Titan/Petrobras).
+- A recurring, load-bearing example is the **MV migration + microgrid project** — used as concrete proof across letters. Reuse it but tailor which facet (electrical / project leadership / renewable) to the role.
+- Consistently states **full-time availability and relocation** near the close.
+- Closes with `Adjunto mi CV...`, `Saludos cordiales,`, `Ing. Joaquín Buttini`.
+- **Motorsport/English letters break the mold deliberately:** candid and direct, openly acknowledges not being an obvious paper fit, tells a genuine passion story (MX-5 setup win), and uses lines like "I'm not asking to skip the line." Keep this honest, non-corporate voice for motorsport — it is the differentiator, not a flaw.

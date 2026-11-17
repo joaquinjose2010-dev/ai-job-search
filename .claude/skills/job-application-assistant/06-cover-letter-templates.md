@@ -167,3 +167,9 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 - Export as PDF to preserve formatting
 - Name files clearly: "[Your Name] CV" and "[Your Name] Cover Letter"
 - Follow all employer instructions regarding anonymity or specific materials
+
+## Patterns Observed in Joaquín's Past Cover Letters
+*(Structural observations for reuse — adapt, don't copy verbatim.)*
+- **Spanish (engineering) structure:** `Ref:` line → salutation → role + current position → one strong technical paragraph (usually the MV/microgrid project, tailored) → availability + relocation → `Adjunto mi CV. Saludos cordiales, Ing. Joaquín Buttini`.
+- **Technical-commercial (Schneider) variant:** leads with the technical+commercial combo, foregrounds **Andino Ingeniería** as proof of consultative selling, ties his current project to the company's product line (e.g. Schneider SM6 switchgear). Verify any company-specific product/claim via WebFetch before using.
+- **Motorsport (English) variant:** intentionally candid and personal; opens by naming the "not an obvious fit on paper" reality, then converts it with a real vehicle-dynamics story (MX-5 race-winning setup) and the funded UK-postgrad plan. Do NOT sanitize this into corporate tone.

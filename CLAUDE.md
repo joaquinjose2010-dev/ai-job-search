@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Joaquín Buttini
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Joaquín Buttini, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,74 +10,104 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Ing. Joaquín Buttini *(professional/display name)*
+- **Legal name:** Buttini Morici, Joaquín José *(use only where official documentation must match: contracts, matrícula, visa/passport)*
+- **Location:** San Rafael, Mendoza, Argentina
+- **Mobility:** Fully mobile — willing to relocate anywhere in the world, the farther the better. No location constraints; treats relocation as an asset and an adventure. This is a genuine differentiator, especially for oil & gas rotations and the UK motorsport move.
+- **Phone:** +54 260 458-5774
+- **Email:** joaquin.jose2010@gmail.com
+- **LinkedIn:** linkedin.com/in/joaquinbuttini
+- **Languages:** Spanish (native); English (advanced — B2 Anglia certified 2018, C1 Oxford exam scheduled Nov 2026); Portuguese (basic comprehension)
+- **Status:** Employed full-time as Plant Engineer at Tassaroli S.A.; actively searching.
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Ingeniero Electromecánico (Electromechanical Engineering)** (2019–2025) - Universidad Tecnológica Nacional, Facultad Regional San Rafael (UTN FRSR)
+  - Graduated July 2025; degree ceremony (acto de colación) 24 Apr 2026; **physical diploma in process, matrícula profesional pending** — do NOT claim "matrícula vigente"
+  - Thesis: "Trasplantadora de plantines" — full mechanical design of an agricultural transplanting machine with market study and economic feasibility (IRR 51%, NPV \$7.4M, 45-month payback)
+  - Note for international/motorsport applications: the Argentine "Ingeniero" is a 5–6 year degree, closer to an integrated MEng than a 3-year bachelor. Frame accordingly abroad.
+- **Técnico Electromecánico** - ENET 4-117 "Ejército de los Andes"
+  - Final project: fully automated PLC-controlled machine (designed, built and programmed end-to-end)
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Ingeniero de Planta (Plant Engineer)** (May 2026 - Present) - **Tassaroli S.A.** (San Rafael, oil & gas equipment manufacturer; clients Halliburton, Titan, Petrobras)
+  - Full plant operations management for an oil & gas equipment manufacturer
+  - Leads maintenance and production teams on projects for Halliburton, Titan and Petrobras
+  - Follows up (as part of a multidisciplinary team) the plant's migration from 3 low-voltage supplies to a single medium-voltage supply, plus a microgrid (solar PV, BESS, gas generation) to cut contracted power, shave the demand peak and export surplus. Tracks the external engineering firm's deliverables, manages permits with the distributor (EDEMSA) and communicates decisions to management. **Currently in pre-feasibility** (staging and budgeting) — this is a follow-up/coordination role, not design leadership
+  - Redesign of critical components, directly reducing unplanned downtime
+  - Technical documentation under ASME and API standards
+- **Ingeniero en Mantenimiento (Maintenance Engineer)** (Jan 2025 - Apr 2026) - **Tassaroli S.A.**
+  - Planning and tracking of work orders on critical oil & gas equipment
+  - Preventive and corrective maintenance of industrial machinery
+  - Component/device design for process improvements; PLC maintenance and programming
+  - Implemented 5S methodology, reducing unplanned downtime
+- **Pasante de Ingeniería (Engineering Intern)** (May 2024 - Dec 2024) - **Tassaroli S.A.**
+  - Mechanical, hydraulic and electrical design and calculation for plant projects
+  - Component manufacturing under ASME and API standards; technical purchasing and supplier coordination
+- **Ayudante de Cátedra (Teaching Assistant)** (Feb 2026 - Present) - **UTN FRSR**
+  - Academic support in Electromechanical Engineering; guides lab work; explains complex concepts
+- **Fundador / Desarrollo Técnico-Comercial** (2025 - Present) - **Andino Ingeniería** (own engineering-services venture)
+  - *Emphasize ONLY for commercial / consulting / technical-sales roles.* First client came through work contacts. Portfolio spans mechanical/electrical engineering services (part design, 3D-print design) and **custom software built with Claude Code** (a bank-statement categorizer for accountants; a personal-finance/investment tracker). Full commercial cycle from scratch: consultative relationships, proposals, quoting, closing. Recurring clients. Evidence of entrepreneurial drive and of learning new tools (AI/Claude Code) fast.
+- **Logística y Comercial (seasonal)** (summers 2022 & 2023) - **Danone** (San Rafael) - early experience; include only if relevant.
+
+### Independent Projects
+- **Agricultural machinery design (freelance, 2025–present):** full design of 3 machines (destemmer, stacker, sieve) for a private client — structural calculation, 3D modelling, fabrication drawings, specs. 100–150 h each.
+- **Vertical-axis wind turbines (applied research, UTN, 2024–2025):** restored a university wind tunnel; designed/tested Savonius, Darrieus and hybrid turbines against real Malargüe wind data. Full cycle: design → fabrication → experimental validation.
+- **3D printer build + printing micro-venture (during degree):** designed and built a 3D printer (mechanics, electronics, calibration) and ran a self-funded printing business.
+
+### Motorsport & Vehicle Dynamics (active career target — push now)
+- **Genuine, long-standing interest** in motorsport and vehicle dynamics; follows the sport closely and uses **sim racing (Assetto Corsa, ACC) as a hobby**. **Do NOT present sim-racing setups as professional engineering achievements** — keep this as authentic enthusiasm, not fabricated experience. (The earlier "race-winning MX-5 setup" claim was removed: it was Claude-assisted for a one-off race and would not survive interview scrutiny.)
+- **Transferable engineering:** mechanical/hydraulic/electrical design, structural calculation and manufacturing documentation that map onto race-car design and simulation-support roles.
+- **Concrete commitment:** actively pursuing a postgraduate degree in Motorsport Engineering in the UK (Motorsport Valley). Target entry roles: graduate/junior design engineer, vehicle dynamics, simulation support.
+- **Honest positioning** (see the motorsport cover letter): not asking to skip the line; offering a strong engineering base plus real motivation and self-funded credentials.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **CAD/CAE:** SolidWorks, Autodesk Inventor, AutoCAD, MATLAB; basic FEA
+- **Engineering domain:** mechanical/hydraulic/electrical design & calculation; medium/low-voltage distribution; microgrid (solar, BESS, gas); industrial maintenance; automation & PLC; technical documentation
+- **Standards:** ASME, API, ISO 9001, IEC
+- **Methods:** 5S, continuous improvement; maintenance planning; reliability
+- **Management:** team leadership, operations management, multidisciplinary project coordination, technical purchasing
+- **Commercial (Andino Ingeniería):** consultative selling, proposals, CRM
+- **Vehicle dynamics (self-taught):** suspension setup, brake bias, weight-transfer analysis
+- **Software:** advanced Excel/Office; MS Project/Planner
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **English B2** - Anglia International Examination - certified 2018
+- **English C1** - Oxford - exam scheduled Nov 2026 (level held in practice; not yet certified)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+*(Inferred from LinkedIn About, CVs, and cover letters — review before relying on this)*
+- **Proactive and self-driven** - builds things unprompted (own 3D printer, own engineering venture, 4 machines designed solo in 45 days, apps built with Claude Code)
+- **Fast growth / ambition** - Intern → Plant Engineer in under 2 years
+- **Autonomous project ownership** - runs freelance projects end-to-end alongside a full-time job
+- **Leader when needed, strong teammate** - leads maintenance/production teams; good interpersonal skills
+- **Results-oriented and analytical**
+- **Genuine technical curiosity** - "reads suspension geometry the way others read novels"
+- **Craves adventure and mobility** - the farther the assignment, the better
+- **Strengths:** design & calculation, problem-solving, initiative, adaptability, communicating complex ideas
+- **Thrives in:** large-scale, high-stakes engineering projects with room to learn and take ownership
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Designing and understanding *why* mechanical/electrical systems behave the way they do
+- Large-scale, high-stakes engineering projects
+- Adventure, relocation, new environments
+- Motorsport / vehicle dynamics — the long-term dream
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Oil & gas / energy (Argentina):** Tassaroli-adjacent, YPF, Tecpetrol, PAE, Vista, Neuquén/Vaca Muerta — income base now
+- **Industrial / plant / process engineering (Argentina):** Techint, Mastellone, Schneider Electric, industrial manufacturers
+- **Motorsport (international, UK-focused):** F1/F2/F3 and junior-formula teams, motorsport suppliers, UK postgrad programmes (Cranfield, Oxford Brookes)
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- None stated. Open to opportunities; prioritizes the opportunity itself. Fully relocation-flexible.
+- Salary: **relativize by region/cost of living** — e.g. 5M ARS is high in San Rafael but normal in Neuquén. No hard floor; weight growth, project quality and brand alongside pay.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
+- `documents/` - source materials (existing CVs, LinkedIn export, diploma, past cover letters)
 - `.claude/skills/` - AI skill definitions for the application workflow
-- `.agents/skills/` - Job search CLI tools
+- `.agents/skills/` - Job search CLI tools (Danish portals — NOT in use for this profile)
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
@@ -91,6 +118,11 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 **Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Claude Code** by name.
 
+## Toolchain notes (this machine)
+- MiKTeX is installed but NOT on PATH: binaries at `C:\Users\joaqu\AppData\Local\Programs\MiKTeX\miktex\bin\x64\`. Call `lualatex.exe` / `xelatex.exe` by full path.
+- poppler (`pdftoppm`, `pdftotext`) installed via winget at `C:\Users\joaqu\AppData\Local\Microsoft\WinGet\Packages\oschwartz10612.Poppler_*\poppler-*\Library\bin\`. Until Claude Code is restarted to pick up the new PATH, render PDFs to PNG with `pdftoppm` (full path) then Read the PNG, and extract text with `pdftotext`.
+- MiKTeX `[MPM]AutoInstall` is set to 1 (auto-install missing packages).
+
 ## Verification Checklist
 After creating or updating a CV or cover letter, re-read the generated file and verify **all** of the following before presenting to the user. Report the results as a pass/fail checklist.
 
@@ -98,6 +130,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] All claims match actual profile (CLAUDE.md / candidate profile) - no fabricated skills, experience, or achievements
 - [ ] Job titles, dates, company names, and locations are correct
 - [ ] Contact details are correct
+- [ ] **English is B2-certified / C1-in-progress, NOT "C1 certified"**; degree is "recibido", NOT "matrícula vigente"
 - [ ] All company-specific claims (partnerships, products, technology, expansions) have been independently verified via WebFetch/WebSearch - do not trust reviewer agent research without verification
 
 ### Targeting
@@ -105,6 +138,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Skills and experience bullets are reframed to match the job requirements
 - [ ] Key job requirements are addressed (with gaps acknowledged where relevant)
 - [ ] Nice-to-have requirements are highlighted where there is a match
+- [ ] Andino Ingeniería is included ONLY for commercial/consulting/sales roles
 
 ### Consistency
 - [ ] CV follows the standard 2-page moderncv/banking format

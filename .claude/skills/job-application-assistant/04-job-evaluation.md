@@ -1,13 +1,10 @@
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Scoring Dimensions
 
-Evaluate each job posting against these five dimensions:
+Evaluate each job posting against these five dimensions.
 
 ### 1. Technical Skills Match (0-100)
-How well do the required/preferred skills align with the candidate's capabilities?
 
 | Score | Meaning |
 |-------|---------|
@@ -16,12 +13,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** mechanical/hydraulic/electrical design & calculation; SolidWorks/Inventor/AutoCAD; ASME/API/ISO/IEC documentation; industrial maintenance (preventive/corrective, planning); PLC/automation; 5S/continuous improvement; medium/low-voltage distribution & microgrid; technical purchasing.
+**Moderate match areas:** reliability engineering; project/process engineering; FEA (basic); technical-commercial/sales (via Andino); MATLAB; vehicle dynamics (self-taught, sim-based).
+**Weak / aspirational areas:** formal motorsport/race-team experience; advanced CFD/aero; large-team people-management at scale; specialized software he hasn't used (name the specific gap when it appears).
 
 ### 2. Experience Match (0-100)
-Does work history align with what they're looking for?
 
 | Score | Meaning |
 |-------|---------|
@@ -30,30 +26,19 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** oil & gas equipment engineering, plant/maintenance engineering, mechanical design, technical documentation (ASME/API).
+**Moderate:** process/reliability/project engineering, electrical MV projects, technical sales.
+**Entry-level:** motorsport engineering (via transferable design + self-taught vehicle dynamics + committed UK postgrad plan).
 
 ### 3. Behavioral/Culture Fit (0-100)
-Does the role and company culture match the behavioral profile?
-
-| Score | Meaning |
-|-------|---------|
-| 80-100 | Culture strongly matches behavioral preferences |
-| 60-79 | Mixed signals but mostly compatible |
-| 40-59 | Some friction areas |
-| 0-39 | Significant culture mismatch |
-
-**Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
+See `02-behavioral-profile.md`. Strong fit: ownership, autonomy, greenfield projects, travel/relocation, fast pace, hands-on design. Friction: purely administrative or maintenance-only roles with no design/improvement scope, low-autonomy hierarchies.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- **Joaquín is fully relocation-flexible worldwide — location is essentially never a FAIL.** Do NOT filter jobs out for distance.
+- International travel / rotation / relocation: **PASS and a positive** (aligns with his stated preference).
+- Note visa/work-permit implications for international roles (esp. UK motorsport) as a practical flag, not a disqualifier.
 
 ### 5. Career Alignment & Motivation (0-100)
-Does this role advance career goals and contain tasks that energize?
 
 | Score | Meaning |
 |-------|---------|
@@ -63,76 +48,50 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- **Now:** grow in large-scale engineering (oil & gas / industrial / plant / process), using global mobility as an advantage — this funds and de-risks the next step.
+- **Medium-term (actively pushing now):** break into **motorsport engineering** (F1/junior formulae/suppliers), via a **UK Motorsport Engineering postgrad** (Motorsport Valley).
+- **Always:** roles with real design/technical ownership and a steep learning curve.
 
-**Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+**Motivation filter:**
+- Tasks that energize: design & calculation, understanding *why* systems behave, large/high-stakes projects, new environments/travel, vehicle dynamics.
+- Tasks that drain: purely administrative work, maintenance-only with no improvement/design scope, static roles with no growth.
+- **Scoring bias:** a role that is a stepping stone toward motorsport/UK (international exposure, vehicle-adjacent design, simulation, English-speaking environment, relocation) should score higher on Career Alignment even if the domain differs.
 
-**Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+**Life-situation alignment:**
+- **Security:** employed; can afford to be selective; growth > short-term pay.
+- **Flexibility:** no location or travel constraints.
+- **Professional development:** prioritizes learning, project quality, brand, and anything that advances the motorsport goal.
 
-### 6. Salary Benchmark (Optional)
-
-If the salary lookup tool is configured (`salary_data.json` exists), look up the company:
-```
-python salary_lookup.py "<Company Name>" --json
-```
-
-If a city is known from the posting, add `--city "<City>"` to narrow results.
-
-Present findings as:
-```
-### Salary Benchmark
-| Metric | Value |
-|--------|-------|
-| [Category] index | XX.X (+/-X.X% vs baseline) |
-| Overall index | XX.X (+/-X.X% vs baseline) |
-```
-
-Interpret results relative to the baseline defined in the data file's metadata. For index-based data, higher typically means above-market compensation.
-
-If the salary tool is not configured, skip this section.
+### 6. Salary Benchmark (region-relative)
+- **No hard salary floor.** Always relativize to the job's region and cost of living. Example given by Joaquín: 5,000,000 ARS is high in San Rafael but normal in Neuquén.
+- For a posting, judge pay against *local* norms for the role, not a fixed number. Flag clearly under- or over-market offers.
+- `salary_data.json` is not configured — skip the automated `salary_lookup.py` step unless it is later added.
 
 ## Output Format
-
-Present the evaluation as:
 
 ```
 ## Job Fit Evaluation: [Role] at [Company]
 
 | Dimension | Score | Notes |
 |-----------|-------|-------|
-| Technical Skills | XX/100 | [brief note] |
-| Experience Match | XX/100 | [brief note] |
-| Behavioral Fit | XX/100 | [brief note] |
-| Location | PASS/FAIL | [brief note] |
-| Career Alignment | XX/100 | [brief note] |
+| Technical Skills | XX/100 | ... |
+| Experience Match | XX/100 | ... |
+| Behavioral Fit | XX/100 | ... |
+| Location | PASS | fully mobile |
+| Career Alignment | XX/100 | ... (note motorsport-stepping-stone bonus if any) |
 
-**Overall Score: XX/100** (weighted average of scored dimensions)
+**Overall Score: XX/100**
 
-### Verdict: [Strong Fit / Good Fit / Moderate Fit / Weak Fit / Poor Fit]
-
+### Verdict: [Strong / Good / Moderate / Weak / Poor Fit]
 ### Key Strengths for This Role
-- [bullet points]
-
 ### Gaps to Address
-- [bullet points]
-
 ### Recommendation
-[1-2 sentences: apply/skip/apply with caveats]
-
 ### Company Research Checklist
-- [ ] Checked company website (mission, values, recent news)
-- [ ] Checked review sites (Glassdoor, Jobindex, etc.)
-- [ ] Checked LinkedIn for team size, recent hires, connections
-- [ ] Checked media for restructuring, growth, or workplace issues
-- [ ] Identified network contacts who may know the team/manager
+- [ ] Website (mission, values, recent news)
+- [ ] Reviews (Glassdoor / local equivalents)
+- [ ] LinkedIn (team, recent hires, connections)
+- [ ] Media (restructuring, growth, issues)
+- [ ] Visa/work-permit note if international
 ```
 
 ## Weighting
@@ -141,33 +100,11 @@ Present the evaluation as:
 - Behavioral Fit: 15%
 - Career Alignment: 30%
 
-(Location is pass/fail, not weighted)
+(Location is pass/fail and, for Joaquín, effectively always PASS.)
 
 ## Thresholds
 - **Strong Fit** (75+): Definitely apply, tailor everything
 - **Good Fit** (60-74): Apply, address gaps in cover letter
-- **Moderate Fit** (45-59): Consider carefully, discuss with user
-- **Weak Fit** (30-44): Probably skip unless strategic reasons
+- **Moderate Fit** (45-59): Consider — but bump up if it's a genuine motorsport/international stepping stone
+- **Weak Fit** (30-44): Probably skip unless strategic (e.g. gets a foot into a race team)
 - **Poor Fit** (<30): Skip
-
-## Pre-Application: Call the Employer (Best Practice)
-
-Before writing the application, consider whether the candidate should call the contact person listed in the posting. **Only call if there are substantive questions** - never call just to "be remembered."
-
-### When to Suggest Calling
-- The posting has unclear or ambiguous requirements
-- It's unclear which competencies are essential vs. nice-to-have
-- The role description is vague about day-to-day tasks
-- There's a named contact person who invites questions
-
-### Good Questions to Ask
-- "What are the primary challenges in this role?"
-- "How is time typically divided across the listed responsibilities?"
-- "Which competencies are most critical for success in this position?"
-- "What does success look like in the first 6-12 months?"
-
-### Rules for the Call
-- Prepare a 30-second "elevator pitch" about your background in case they ask
-- The call's purpose is **gathering information**, not delivering a pitch
-- Take notes - use what you learn to tailor the application
-- Reference the conversation naturally in the cover letter ("After speaking with [name], I was especially drawn to...")
